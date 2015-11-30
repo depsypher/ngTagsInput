@@ -268,6 +268,15 @@ tagsInput.directive('tagsInput', function($timeout, $document, $window, tagsInpu
                 invalid: null
             };
 
+            scope.getTagClasses = function(tag) {
+                var classes = [];
+                if (tag === tagList.selected) {
+                    classes.push('selected');
+                }
+                classes.push('ngTagsInput-' + tag);
+                return classes;
+            };
+
             scope.track = function(tag) {
                 return tag[options.keyProperty || options.displayProperty];
             };
