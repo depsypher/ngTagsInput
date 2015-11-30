@@ -121,10 +121,7 @@ module.exports = function(grunt) {
         'changelog',
         'replace:changelog',
         'shell:git',
-        'dgeni',
-        'copy:website',
-        'update-website-version',
-        'shell:git_website'
+        'dgeni'
     ]);
 
     grunt.registerTask('default', ['pack']);
