@@ -273,7 +273,7 @@ tagsInput.directive('tagsInput', function($timeout, $document, $window, tagsInpu
                 if (tag === tagList.selected) {
                     classes.push('selected');
                 }
-                classes.push('ngTagsInput-' + tag);
+                classes.push('ngTagsInput-' + tag.text);
                 return classes;
             };
 
