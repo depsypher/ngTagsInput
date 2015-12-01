@@ -1,11 +1,11 @@
 /*!
- * ngTagsInput v13.0.0
+ * ngTagsInput v13.0.1
  * http://mbenford.github.io/ngTagsInput
  *
  * Copyright (c) 2013-2015 Michael Benford
  * License: MIT
  *
- * Generated at 2015-11-30 15:29:58 -0800
+ * Generated at 2015-11-30 16:04:23 -0800
  */
 (function() {
 'use strict';
@@ -302,7 +302,7 @@ tagsInput.directive('tagsInput', ["$timeout", "$document", "$window", "tagsInput
                 if (tag === tagList.selected) {
                     classes.push('selected');
                 }
-                classes.push('ngTagsInput-' + tag);
+                classes.push('ngTagsInput-' + tag.text);
                 return classes;
             };
 
